@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/symptomsLogCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#d7efff"
+    card_view:layout_constraintTop_toTopOf="parent"
+    card_view:layout_constraintLeft_toLeftOf="parent"
+    card_view:layout_constraintRight_toRightOf="parent"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dateLogTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:textColor="#2282c1"/>
+
+        <TextView
+            android:id="@+id/symptomsLogTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/dateLogTextView"
+            android:text="Symptom(s): "/>
+
+        <TextView
+            android:id="@+id/symptomsLogTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@id/dateLogTextView"
+            android:layout_toEndOf="@id/symptomsLogTextLabel"/>
+
+        <TextView
+            android:id="@+id/noteLogTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptomsLogTextLabel"
+            android:layout_alignStart="@+id/symptomsLogTextLabel"
+            android:layout_alignEnd="@id/symptomsLogTextLabel"
+            android:layout_alignBaseline="@id/additionalNoteLogTextView"
+            android:text="Note(s): "
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/additionalNoteLogTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/symptomsLogTextView"
+            android:layout_toEndOf="@+id/noteLogTextLabel"
+            android:layout_marginStart="0dp"
+            android:textSize="15sp"
+            android:paddingTop="5dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+

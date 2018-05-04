@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/severityTextView"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBaseline="@id/logTexts"
+        android:text="Symptom: "/>
+
+    <TextView
+        android:id="@+id/logTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/logTextView" />
+
+
+    <TextView
+        android:id="@+id/severityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/additionalInfoTextView"
+        android:layout_below="@id/logTextView"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignBaseline="@id/severityTexts"
+        android:text="Severity: " />
+
+    <TextView
+        android:id="@+id/severityTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/severityTextView"
+        android:layout_below="@id/logTexts"/>
+
+    <TextView
+        android:id="@+id/additionalInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/severityTextView"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:maxLines="1"
+        android:text="Additional Info: "
+        android:layout_alignBaseline="@id/additionalInfoTexts"/>
+
+    <TextView
+        android:id="@+id/additionalInfoTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/additionalInfoTextView"
+        android:layout_below="@id/severityTexts" />
+
+</RelativeLayout>

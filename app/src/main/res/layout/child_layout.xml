@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGroup">
+
+        <RadioButton
+            android:id="@+id/childItem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/childItem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/childItem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/childItem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+            android:paddingTop="5dp"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/extraSymptomsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Additional info about the symptom..."/>
+
+    <Button
+        android:id="@+id/addSymptomsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/round_button"
+        android:textSize="10sp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+

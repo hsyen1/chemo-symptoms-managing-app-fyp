@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verticalGuideline"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalGuideline"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="256dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/symptomsLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="symptomsClick"
+        app:layout_constraintRight_toLeftOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/qol_border">
+
+        <TextView
+            android:id="@+id/symptomTextView"
+            android:text="SYMPTOMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="233dp"
+            android:textSize="18sp"
+            android:textColor="#1E88E5"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/symptomTextDescView"
+            android:text="Track the severity of your symptoms and side effects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/symptomTextView"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/QoLifeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/qol_border"
+        android:onClick="QoLifeClick"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalGuideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/verticalGuideline">
+
+        <TextView
+            android:id="@+id/QoLifeView"
+            android:text="Quality of Life Assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#1E88E5"
+            android:textAlignment="center"
+            android:layout_marginTop="71dp" />
+
+        <TextView
+            android:id="@+id/QoLifeDesc"
+            android:text="Assess your quality of life via questionnaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/QoLifeView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ContactAlertLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/layout"
+        android:onClick="contactAndAlertClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/verticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/horizontalGuideline">
+
+        <TextView
+            android:id="@+id/ContactAlertView"
+            android:text="Contact and Alert Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#1E88E5"
+            android:textAlignment="center"
+            android:layout_marginTop="71dp" />
+
+        <TextView
+            android:id="@+id/ContactAlertDesc"
+            android:text="Assign a medical staff to receive your alerts should there be any emergencies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ContactAlertView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
